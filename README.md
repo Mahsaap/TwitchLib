@@ -272,7 +272,7 @@ namespace Example
         {
             api = new TwitchAPI();
             api.Settings.ClientId = "client_id";
-            api.Settings.AccessToken = "access_token";
+            api.Settings.AccessToken = "access_token"; // Secret is not Accesstoken
         }
 
         private async Task ExampleCallsAsync()
@@ -316,7 +316,7 @@ Module Module1
     Sub Main()
         api = New TwitchAPI()
         api.Settings.ClientId = "Client_id"
-        api.Settings.AccessToken = "access_token"
+        api.Settings.AccessToken = "access_token" // Secret is not Accesstoken
         streaming().Wait()
         getchanfollows().Wait()
         getusersubs().Wait()
